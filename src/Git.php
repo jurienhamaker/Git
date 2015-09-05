@@ -1,7 +1,9 @@
-<?php 
+<?php
+
+
 namespace HazeDevelopment;
 
-Class Git
+class Git
 {
     public $repo;
     public $location;
@@ -29,11 +31,9 @@ Class Git
     public function cloneRepo()
     {
         $cloneUrl = $this->repo;
-        if(!$this->ssh)
-        {
+        if (!$this->ssh) {
             $cloneUrl = 'http://'.$this->user;
-            if($this->password)
-            {
+            if ($this->password) {
                 $cloneUrl .= ':'.$this->password;
             }
 
@@ -55,8 +55,7 @@ Class Git
 
     public function add($files)
     {
-        if(is_array($files))
-        {
+        if (is_array($files)) {
             $files = implode(' ', $files);
         }
 
