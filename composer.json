@@ -1,0 +1,19 @@
+{
+    "name": "hazedevelopment/git",
+    "description": "A git wrapper for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jurien Hamaker",
+            "email": "jurienhamaker@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HazeDevelopment\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
